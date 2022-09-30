@@ -16,7 +16,7 @@ import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 
 @Data
-@TableName("tz_prod_prop_value")
+@TableName("TZ_PROD_prop_value")
 public class ProdPropValue implements Serializable{
     /**
 	 * 

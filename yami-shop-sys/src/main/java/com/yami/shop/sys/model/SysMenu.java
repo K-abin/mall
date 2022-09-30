@@ -26,7 +26,7 @@ import java.util.List;
  * 
  */
 @Data
-@TableName("tz_sys_menu")
+@TableName("TZ_SYS_MENU")
 public class SysMenu implements Serializable {
 	private static final long serialVersionUID = 1L;
 	

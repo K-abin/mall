@@ -32,7 +32,7 @@ import java.util.List;
  * @date 2019-04-19 10:43:57
  */
 @Data
-@TableName("tz_prod_comm")
+@TableName("TZ_PROD_comm")
 @EqualsAndHashCode
 public class ProdComm implements Serializable{
     private static final long serialVersionUID = 1L;

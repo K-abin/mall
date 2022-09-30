@@ -16,7 +16,7 @@ import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 
 @Data
-@TableName("tz_prod_img")
+@TableName("TZ_PROD_img")
 public class ProdImg implements Serializable {
     /**
      * 图片ID

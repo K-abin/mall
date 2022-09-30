@@ -103,7 +103,7 @@
     <select id="pageByTagId" resultType="com.yami.shop.bean.app.dto.ProductDto">
         SELECT
         <include refid="prodAndShopNameWithNoContent_SQL"/>
-        FROM tz_prod p
+        FROM TZ_PROD p
         LEFT JOIN TZ_PROD_TAG_REFERENCE ptr
         ON ptr.`prod_id` = p.`prod_id`
         LEFT JOIN TZ_PROD_TAG pt
@@ -118,7 +118,7 @@
     <select id="pageByPutawayTime" resultType="com.yami.shop.bean.app.dto.ProductDto">
         SELECT
         <include refid="prodAndShopNameWithNoContent_SQL"/>
-        FROM tz_prod p
+        FROM TZ_PROD p
         LEFT JOIN TZ_SHOP_DETAIL sd
         ON p.shop_id = sd.shop_id
         WHERE `status` = 1
@@ -128,7 +128,7 @@
     <select id="moreBuyProdList" resultType="com.yami.shop.bean.app.dto.ProductDto">
         SELECT
         <include refid="prodAndShopNameWithNoContent_SQL"/>
-        FROM tz_prod p
+        FROM TZ_PROD p
         LEFT JOIN TZ_SHOP_DETAIL sd
         ON p.shop_id = sd.shop_id
         WHERE p.`status` = 1

@@ -29,7 +29,7 @@ public class CategoryProp implements Serializable {
     private Long categoryId;
 
     /**
-     * 商品属性id即表tz_prod_prop中的prop_id
+     * 商品属性id即表TZ_PROD_prop中的prop_id
      */
 
     private Long propId;

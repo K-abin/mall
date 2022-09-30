@@ -25,7 +25,7 @@ import java.util.Date;
  * @date 2019-04-18 10:48:44
  */
 @Data
-@TableName("tz_prod_tag")
+@TableName("TZ_PROD_TAG")
 public class ProdTag implements Serializable {
 
     private static final long serialVersionUID = 1991508792679311621L;

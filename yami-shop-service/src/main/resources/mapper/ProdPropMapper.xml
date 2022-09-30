@@ -40,7 +40,7 @@
             </if>
             LIMIT #{adapter.begin} , #{adapter.size}
         ) pp
-        left join tz_prod_prop_value ppv
+        left join TZ_PROD_prop_value ppv
         on pp.prop_id = ppv.prop_id
     </select>
 

@@ -20,7 +20,7 @@ import java.util.Date;
 import java.util.List;
 
 @Data
-@TableName("tz_prod")
+@TableName("TZ_PROD")
 public class Product implements Serializable {
 
     private static final long serialVersionUID = -4644407386444894349L;

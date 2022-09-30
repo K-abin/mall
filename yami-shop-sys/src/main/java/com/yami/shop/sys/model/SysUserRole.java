@@ -21,7 +21,7 @@ import java.io.Serializable;
  * 用户与角色对应关系
  */
 @Data
-@TableName("tz_sys_user_role")
+@TableName("TZ_SYS_USER_role")
 public class SysUserRole implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@TableId

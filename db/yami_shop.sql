@@ -4090,7 +4090,7 @@ DROP TABLE IF EXISTS `tz_category_prop`;
 CREATE TABLE `tz_category_prop` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `category_id` bigint(20) DEFAULT NULL COMMENT '分类id',
-  `prop_id` bigint(20) DEFAULT NULL COMMENT '商品属性id即表tz_prod_prop中的prop_id',
+  `prop_id` bigint(20) DEFAULT NULL COMMENT '商品属性id即表TZ_PROD_prop中的prop_id',
   PRIMARY KEY (`id`),
   KEY `category_id` (`category_id`),
   KEY `prop_id` (`prop_id`)
@@ -4418,11 +4418,11 @@ CREATE TABLE `tz_pick_addr` (
 insert  into `tz_pick_addr`(`addr_id`,`addr_name`,`addr`,`mobile`,`province_id`,`province`,`city_id`,`city`,`area_id`,`area`,`shop_id`) values
 (1,'测试','大学城附近','18888888888',440000000000,'广东省',440100000000,'广州市',440113000000,'番禺区',1);
 
-/*Table structure for table `tz_prod` */
+/*Table structure for table `TZ_PROD` */
 
-DROP TABLE IF EXISTS `tz_prod`;
+DROP TABLE IF EXISTS `TZ_PROD`;
 
-CREATE TABLE `tz_prod` (
+CREATE TABLE `TZ_PROD` (
   `prod_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '产品ID',
   `prod_name` varchar(300) NOT NULL DEFAULT '' COMMENT '商品名称',
   `shop_id` bigint(20) DEFAULT NULL COMMENT '店铺id',
@@ -4446,9 +4446,9 @@ CREATE TABLE `tz_prod` (
   KEY `shop_id` (`shop_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=utf8 COMMENT='商品';
 
-/*Data for the table `tz_prod` */
+/*Data for the table `TZ_PROD` */
 
-insert  into `tz_prod`(`prod_id`,`prod_name`,`shop_id`,`ori_price`,`price`,`brief`,`content`,`pic`,`imgs`,`status`,`category_id`,`sold_num`,`total_stocks`,`delivery_mode`,`delivery_template_id`,`create_time`,`update_time`,`putaway_time`,`version`) values
+insert  into `TZ_PROD`(`prod_id`,`prod_name`,`shop_id`,`ori_price`,`price`,`brief`,`content`,`pic`,`imgs`,`status`,`category_id`,`sold_num`,`total_stocks`,`delivery_mode`,`delivery_template_id`,`create_time`,`update_time`,`putaway_time`,`version`) values
 (18,'Apple iPhone XS Max 移动联通电信4G手机 ',1,0.00,1.01,'6.5英寸大屏，支持双卡。','<div style=\"margin: 0px; padding: 0px; color: #666666; font-family: tahoma, arial, \'Microsoft YaHei\', \'Hiragino Sans GB\', u5b8bu4f53, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-decoration-style: initial; text-decoration-color: initial;\" align=\"center\">\n<table id=\"__01\" style=\"text-align: center;\" border=\"0\" width=\"750\" cellspacing=\"0\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td><img class=\"\" style=\"margin: 0px; padding: 0px; border: 0px; vertical-align: middle;\" src=\"https://img30.360buyimg.com/cms/jfs/t1/4626/32/3475/220504/5b997365E80a1373f/279c244f12161cb3.jpg\" alt=\"\" width=\"750\" height=\"1991\" /></td>\n</tr>\n<tr>\n<td><img class=\"\" style=\"margin: 0px; padding: 0px; border: 0px; vertical-align: middle;\" src=\"https://img12.360buyimg.com/cms/jfs/t1/3397/21/3533/236322/5b99759aE73795787/f782e04a140c8f16.jpg\" alt=\"\" width=\"750\" height=\"2052\" /></td>\n</tr>\n<tr>\n<td><img class=\"\" style=\"margin: 0px; padding: 0px; border: 0px; vertical-align: middle;\" src=\"https://img11.360buyimg.com/cms/jfs/t1/5274/3/3465/245167/5b997365E16b81bc9/93e07e40f3af5e62.jpg\" alt=\"\" width=\"750\" height=\"2250\" /></td>\n</tr>\n<tr>\n<td><img class=\"\" style=\"margin: 0px; padding: 0px; border: 0px; vertical-align: middle;\" src=\"https://img30.360buyimg.com/cms/jfs/t1/2322/11/3524/269574/5b997365E26f81a7a/e01fc9486da9eda1.jpg\" alt=\"\" width=\"750\" height=\"2327\" /></td>\n</tr>\n<tr>\n<td><img class=\"\" style=\"margin: 0px; padding: 0px; border: 0px; vertical-align: middle;\" src=\"https://img13.360buyimg.com/cms/jfs/t1/5074/21/3432/296470/5b997364Ee966f7a0/7f424d41479db45d.jpg\" alt=\"\" width=\"750\" height=\"2561\" /></td>\n</tr>\n<tr>\n<td><img class=\"\" style=\"margin: 0px; padding: 0px; border: 0px; vertical-align: middle;\" src=\"https://img13.360buyimg.com/cms/jfs/t1/5770/18/3580/288371/5b997365Ea2c58cb4/176b9a40ccd4e56b.jpg\" alt=\"\" width=\"750\" height=\"2668\" /></td>\n</tr>\n<tr>\n<td><img class=\"\" style=\"margin: 0px; padding: 0px; border: 0px; vertical-align: middle;\" src=\"https://img11.360buyimg.com/cms/jfs/t1/227/21/3811/268132/5b997364E3d6c51b2/92d2a3a559e3baa8.jpg\" alt=\"\" width=\"750\" height=\"2850\" /></td>\n</tr>\n<tr>\n<td><img class=\"\" style=\"margin: 0px; padding: 0px; border: 0px; vertical-align: middle;\" src=\"https://img20.360buyimg.com/cms/jfs/t1/3787/5/3493/125020/5b997363E3c9f5910/ddbd08a556744630.jpg\" alt=\"\" width=\"750\" height=\"1486\" /></td>\n</tr>\n<tr>\n<td><img class=\"\" style=\"margin: 0px; padding: 0px; border: 0px; vertical-align: middle;\" src=\"https://img30.360buyimg.com/cms/jfs/t1/1687/5/3327/266718/5b997366E9cc80e69/9e40ceae1fef4466.jpg\" alt=\"\" width=\"750\" height=\"3376\" /></td>\n</tr>\n<tr>\n<td><img class=\"\" style=\"margin: 0px; padding: 0px; border: 0px; vertical-align: middle;\" src=\"https://img30.360buyimg.com/cms/jfs/t1/457/6/3849/283318/5b997363E0c5ab7a9/6f636f0a286bc87c.jpg\" alt=\"\" width=\"750\" height=\"2455\" /></td>\n</tr>\n<tr>\n<td><img class=\"\" style=\"margin: 0px; padding: 0px; border: 0px; vertical-align: middle;\" src=\"https://img10.360buyimg.com/cms/jfs/t1/397/25/3796/217624/5b9975a8E5ee578af/4d8f05a606fa5c4a.jpg\" alt=\"\" width=\"750\" height=\"2703\" /></td>\n</tr>\n</tbody>\n</table>\n</div>','2019/04/eaa8c9bd3e7b41eaa310adbde10b6401.jpg','2019/04/eaa8c9bd3e7b41eaa310adbde10b6401.jpg',1,93,NULL,96,'{\"hasUserPickUp\": false, \"hasShopDelivery\": true}',47,'2019-03-29 14:40:00','2019-06-22 18:28:32','2019-06-22 18:28:32',85),
 (59,'兰蔻粉水清滢柔肤水400ml 爽肤水女保湿舒缓滋润嫩肤',1,0.00,420.00,'好看耐穿','<p><img src=\"http://img-test.gz-yami.com/2019/04/71f54ee20ef34872b1e0aa53cb75b7b6.jpg\" alt=\"\" width=\"790\" height=\"1110\" /></p>','2019/04/ce5a32005a7a4f9483a17051bda6bd6c.jpg','2019/04/ce5a32005a7a4f9483a17051bda6bd6c.jpg,2019/04/8a8712b81a2d4f4ca3eb4a725ad229c6.jpg',1,87,NULL,0,'{\"hasUserPickUp\": false, \"hasShopDelivery\": true}',48,'2019-04-21 19:15:34','2019-04-29 14:30:44','2019-04-29 14:30:44',NULL),
 (68,'【Dole都乐】菲律宾都乐非转基因木瓜1只 单只约410g',1,0.00,26.00,'包邮 肉厚籽少 独具风味','<p style=\"text-align: justify;\"><img src=\"http://img-test.gz-yami.com/2019/04/e7536a53a83d450e8635ce1e9819faf6.jpg\" alt=\"\" width=\"790\" height=\"350\" /></p>','2019/04/0bfd73f43d764d20b2f0b92813abdc56.jpg','2019/04/0bfd73f43d764d20b2f0b92813abdc56.jpg,2019/04/355020f27acd4b13a652cb830f03bedc.jpg',1,95,NULL,0,'{\"hasUserPickUp\": false, \"hasShopDelivery\": true}',47,'2019-04-21 21:56:38','2019-05-22 10:30:37','2019-05-22 10:30:37',NULL),
@@ -4462,11 +4462,11 @@ insert  into `tz_prod`(`prod_id`,`prod_name`,`shop_id`,`ori_price`,`price`,`brie
 (76,'测试商品B',1,40.00,40.00,'BBBB','<p>测试</p>','2019/05/150d6c4a46914dbfa82690098b2ec4e7.jpg','2019/05/150d6c4a46914dbfa82690098b2ec4e7.jpg',1,95,NULL,40,'{\"hasUserPickUp\": false, \"hasShopDelivery\": true}',47,'2019-05-23 17:24:06','2019-06-22 09:40:06','2019-06-22 09:40:06',NULL),
 (77,'测试商品C',1,60.00,50.00,'CCC','<p>CCCC</p>','2019/05/1bdd097dbffd477799a7aca949377b20.jpg','2019/05/1bdd097dbffd477799a7aca949377b20.jpg',1,95,NULL,50,'{\"hasUserPickUp\": false, \"hasShopDelivery\": true}',47,'2019-05-23 17:24:48','2019-06-22 09:39:59','2019-06-22 09:39:59',NULL);
 
-/*Table structure for table `tz_prod_comm` */
+/*Table structure for table `TZ_PROD_comm` */
 
-DROP TABLE IF EXISTS `tz_prod_comm`;
+DROP TABLE IF EXISTS `TZ_PROD_comm`;
 
-CREATE TABLE `tz_prod_comm` (
+CREATE TABLE `TZ_PROD_comm` (
   `prod_comm_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT 'ID',
   `prod_id` bigint(20) unsigned NOT NULL COMMENT '商品ID',
   `order_item_id` bigint(20) unsigned DEFAULT NULL COMMENT '订单项ID',
@@ -4487,13 +4487,13 @@ CREATE TABLE `tz_prod_comm` (
   KEY `prod_id` (`prod_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='商品评论';
 
-/*Data for the table `tz_prod_comm` */
+/*Data for the table `TZ_PROD_comm` */
 
-/*Table structure for table `tz_prod_favorite` */
+/*Table structure for table `TZ_PROD_favorite` */
 
-DROP TABLE IF EXISTS `tz_prod_favorite`;
+DROP TABLE IF EXISTS `TZ_PROD_favorite`;
 
-CREATE TABLE `tz_prod_favorite` (
+CREATE TABLE `TZ_PROD_favorite` (
   `favorite_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
   `prod_id` bigint(20) unsigned NOT NULL COMMENT '商品ID',
   `rec_time` datetime NOT NULL COMMENT '收藏时间',
@@ -4502,13 +4502,13 @@ CREATE TABLE `tz_prod_favorite` (
   KEY `prod_id` (`prod_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='商品收藏表';
 
-/*Data for the table `tz_prod_favorite` */
+/*Data for the table `TZ_PROD_favorite` */
 
-/*Table structure for table `tz_prod_prop` */
+/*Table structure for table `TZ_PROD_prop` */
 
-DROP TABLE IF EXISTS `tz_prod_prop`;
+DROP TABLE IF EXISTS `TZ_PROD_prop`;
 
-CREATE TABLE `tz_prod_prop` (
+CREATE TABLE `TZ_PROD_prop` (
   `prop_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '属性id',
   `prop_name` varchar(20) DEFAULT NULL COMMENT '属性名称',
   `rule` tinyint(2) DEFAULT NULL COMMENT 'ProdPropRule 1:销售属性(规格); 2:参数属性;',
@@ -4517,17 +4517,17 @@ CREATE TABLE `tz_prod_prop` (
   KEY `shop_id` (`shop_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=82 DEFAULT CHARSET=utf8mb4;
 
-/*Data for the table `tz_prod_prop` */
+/*Data for the table `TZ_PROD_prop` */
 
-insert  into `tz_prod_prop`(`prop_id`,`prop_name`,`rule`,`shop_id`) values
+insert  into `TZ_PROD_prop`(`prop_id`,`prop_name`,`rule`,`shop_id`) values
 (80,'内存',1,1),
 (81,'颜色',1,1);
 
-/*Table structure for table `tz_prod_prop_value` */
+/*Table structure for table `TZ_PROD_prop_value` */
 
-DROP TABLE IF EXISTS `tz_prod_prop_value`;
+DROP TABLE IF EXISTS `TZ_PROD_prop_value`;
 
-CREATE TABLE `tz_prod_prop_value` (
+CREATE TABLE `TZ_PROD_prop_value` (
   `value_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '属性值ID',
   `prop_value` varchar(20) DEFAULT NULL COMMENT '属性值名称',
   `prop_id` bigint(20) DEFAULT NULL COMMENT '属性ID',
@@ -4535,9 +4535,9 @@ CREATE TABLE `tz_prod_prop_value` (
   KEY `prop_id` (`prop_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=387 DEFAULT CHARSET=utf8mb4;
 
-/*Data for the table `tz_prod_prop_value` */
+/*Data for the table `TZ_PROD_prop_value` */
 
-insert  into `tz_prod_prop_value`(`value_id`,`prop_value`,`prop_id`) values
+insert  into `TZ_PROD_prop_value`(`value_id`,`prop_value`,`prop_id`) values
 (381,'32G',80),
 (382,'64G',80),
 (383,'128G',80),
@@ -4545,11 +4545,11 @@ insert  into `tz_prod_prop_value`(`value_id`,`prop_value`,`prop_id`) values
 (385,'黄',81),
 (386,'蓝',81);
 
-/*Table structure for table `tz_prod_tag` */
+/*Table structure for table `TZ_PROD_TAG` */
 
-DROP TABLE IF EXISTS `tz_prod_tag`;
+DROP TABLE IF EXISTS `TZ_PROD_TAG`;
 
-CREATE TABLE `tz_prod_tag` (
+CREATE TABLE `TZ_PROD_TAG` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '分组标签id',
   `title` varchar(36) DEFAULT NULL COMMENT '分组标题',
   `shop_id` bigint(20) DEFAULT NULL COMMENT '店铺Id',
@@ -4564,18 +4564,18 @@ CREATE TABLE `tz_prod_tag` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='商品分组表';
 
-/*Data for the table `tz_prod_tag` */
+/*Data for the table `TZ_PROD_TAG` */
 
-insert  into `tz_prod_tag`(`id`,`title`,`shop_id`,`status`,`is_default`,`prod_count`,`style`,`seq`,`create_time`,`update_time`,`delete_time`) values
+insert  into `TZ_PROD_TAG`(`id`,`title`,`shop_id`,`status`,`is_default`,`prod_count`,`style`,`seq`,`create_time`,`update_time`,`delete_time`) values
 (1,'每日上新',1,1,0,0,2,3,'2019-04-18 14:27:02','2019-04-18 14:27:06',NULL),
 (2,'商城热卖',1,1,0,0,1,2,'2019-04-18 14:27:27','2019-04-18 14:27:30',NULL),
 (3,'更多宝贝',1,1,1,0,0,1,'2019-04-18 10:07:17','2019-04-18 10:07:17',NULL);
 
-/*Table structure for table `tz_prod_tag_reference` */
+/*Table structure for table `TZ_PROD_TAG_reference` */
 
-DROP TABLE IF EXISTS `tz_prod_tag_reference`;
+DROP TABLE IF EXISTS `TZ_PROD_TAG_reference`;
 
-CREATE TABLE `tz_prod_tag_reference` (
+CREATE TABLE `TZ_PROD_TAG_reference` (
   `reference_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '分组引用id',
   `shop_id` bigint(20) DEFAULT NULL COMMENT '店铺id',
   `tag_id` bigint(20) DEFAULT NULL COMMENT '标签id',
@@ -4585,9 +4585,9 @@ CREATE TABLE `tz_prod_tag_reference` (
   PRIMARY KEY (`reference_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=342 DEFAULT CHARSET=utf8;
 
-/*Data for the table `tz_prod_tag_reference` */
+/*Data for the table `TZ_PROD_TAG_reference` */
 
-insert  into `tz_prod_tag_reference`(`reference_id`,`shop_id`,`tag_id`,`prod_id`,`status`,`create_time`) values
+insert  into `TZ_PROD_TAG_reference`(`reference_id`,`shop_id`,`tag_id`,`prod_id`,`status`,`create_time`) values
 (25,1,1,60,1,'2019-04-21 21:29:19'),
 (26,1,3,60,1,'2019-04-21 21:29:19'),
 (29,1,3,62,1,'2019-04-21 21:35:13'),
@@ -5054,11 +5054,11 @@ insert  into `tz_sys_log`(`id`,`username`,`operation`,`method`,`params`,`time`,`
 (844,'admin','修改定时任务','com.yami.shop.quartz.controller.ScheduleJobController.update()','{\"jobId\":16,\"beanName\":\"orderTask\",\"methodName\":\"confirmOrder\",\"cronExpression\":\"0 0/5 * * * ?\",\"status\":0,\"remark\":\"系统自动确认收货订单\"}',18,'127.0.0.1','2019-08-07 17:01:57'),
 (845,'admin','立即执行任务','com.yami.shop.quartz.controller.ScheduleJobController.run()','[14]',14,'127.0.0.1','2019-08-07 17:02:06');
 
-/*Table structure for table `tz_sys_menu` */
+/*Table structure for table `TZ_SYS_MENU` */
 
-DROP TABLE IF EXISTS `tz_sys_menu`;
+DROP TABLE IF EXISTS `TZ_SYS_MENU`;
 
-CREATE TABLE `tz_sys_menu` (
+CREATE TABLE `TZ_SYS_MENU` (
   `menu_id` bigint(20) NOT NULL AUTO_INCREMENT,
   `parent_id` bigint(20) DEFAULT NULL COMMENT '父菜单ID，一级菜单为0',
   `name` varchar(50) DEFAULT NULL COMMENT '菜单名称',
@@ -5070,9 +5070,9 @@ CREATE TABLE `tz_sys_menu` (
   PRIMARY KEY (`menu_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=317 DEFAULT CHARSET=utf8 COMMENT='菜单管理';
 
-/*Data for the table `tz_sys_menu` */
+/*Data for the table `TZ_SYS_MENU` */
 
-insert  into `tz_sys_menu`(`menu_id`,`parent_id`,`name`,`url`,`perms`,`type`,`icon`,`order_num`) values
+insert  into `TZ_SYS_MENU`(`menu_id`,`parent_id`,`name`,`url`,`perms`,`type`,`icon`,`order_num`) values
 (1,0,'系统管理','','',0,'system',3),
 (2,1,'管理员列表','sys/user','',1,'admin',1),
 (3,1,'角色管理','sys/role','',1,'role',2),
@@ -5316,11 +5316,11 @@ insert  into `tz_sys_role_menu`(`id`,`role_id`,`menu_id`) values
 (104,1,29),
 (105,1,-666666);
 
-/*Table structure for table `tz_sys_user` */
+/*Table structure for table `TZ_SYS_USER` */
 
-DROP TABLE IF EXISTS `tz_sys_user`;
+DROP TABLE IF EXISTS `TZ_SYS_USER`;
 
-CREATE TABLE `tz_sys_user` (
+CREATE TABLE `TZ_SYS_USER` (
   `user_id` bigint(20) NOT NULL AUTO_INCREMENT,
   `username` varchar(50) NOT NULL COMMENT '用户名',
   `password` varchar(100) DEFAULT NULL COMMENT '密码',
@@ -5334,23 +5334,23 @@ CREATE TABLE `tz_sys_user` (
   UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='系统用户';
 
-/*Data for the table `tz_sys_user` */
+/*Data for the table `TZ_SYS_USER` */
 
-insert  into `tz_sys_user`(`user_id`,`username`,`password`,`email`,`mobile`,`status`,`create_user_id`,`create_time`,`shop_id`) values
+insert  into `TZ_SYS_USER`(`user_id`,`username`,`password`,`email`,`mobile`,`status`,`create_user_id`,`create_time`,`shop_id`) values
 (1,'admin','{bcrypt}$2a$10$AV9Xz.3ck4RsXiad5ArcBO5.ZKwlpcnJzs740BHY..fsSp0PnM/Zu','root@123.com','13612345678',1,1,'2016-11-11 11:11:11',1);
 
-/*Table structure for table `tz_sys_user_role` */
+/*Table structure for table `TZ_SYS_USER_role` */
 
-DROP TABLE IF EXISTS `tz_sys_user_role`;
+DROP TABLE IF EXISTS `TZ_SYS_USER_role`;
 
-CREATE TABLE `tz_sys_user_role` (
+CREATE TABLE `TZ_SYS_USER_role` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `user_id` bigint(20) DEFAULT NULL COMMENT '用户ID',
   `role_id` bigint(20) DEFAULT NULL COMMENT '角色ID',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户与角色对应关系';
 
-/*Data for the table `tz_sys_user_role` */
+/*Data for the table `TZ_SYS_USER_role` */
 
 /*Table structure for table `tz_transcity` */
 

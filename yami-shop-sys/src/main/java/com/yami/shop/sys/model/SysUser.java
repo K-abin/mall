@@ -30,7 +30,7 @@ import java.util.List;
  * 系统用户
  */
 @Data
-@TableName("tz_sys_user")
+@TableName("TZ_SYS_USER")
 public class SysUser implements Serializable {
 	private static final long serialVersionUID = 1L;
 	

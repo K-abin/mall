@@ -21,7 +21,7 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 @Data
-@TableName("tz_prod_prop")
+@TableName("TZ_PROD_prop")
 public class ProdProp implements Serializable {
     private static final long serialVersionUID = -8761177918672000191L;
 
