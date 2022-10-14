@@ -6,13 +6,3 @@ docker ps 查看运行镜像
 进入docker 查看mysql
 sudo docker exec -it JY_mysql bash  
 cd etc 
-
-TZ_TRANSCITY
-TZ_TRANSCITY_FREE
-TZ_TRANSFEE
-TZ_TRANSFEE_FREE
-TZ_TRANSPORT
-TZ_USER
-TZ_USER_ADDR
-TZ_USER_ADDR_ORDER
-TZ_USER_COLLECTION

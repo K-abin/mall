@@ -45,7 +45,7 @@
         </el-form>
       </div>
 
-      <div class="bottom">Copyright © 2019 广州市蓝海创新科技有限公司</div>
+      <div class="bottom">Copyright ©2022 But I hope that the wind and rain will come and leave you here</div>
     </div>
     <Verify
       ref="verify"
@@ -67,8 +67,8 @@ export default {
   data () {
     return {
       dataForm: {
-        userName: '',
-        password: '',
+        userName: 'admin',
+        password: '123456',
         uuid: '',
         captcha: ''
       },

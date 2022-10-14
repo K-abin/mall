@@ -47,9 +47,9 @@ public class SwaggerConfiguration {
 	 public ApiInfo apiInfo() {
 	     return new ApiInfoBuilder()
 	     .title("mall4j商城接口文档")
-	     .description("mall4j商城接口文档Swagger版")
-	     .termsOfServiceUrl("http://www.mall4j.com/")
-	     .contact(new Contact("广州市蓝海创新科技有限公司","https://www.mall4j.com/", ""))
+	     .description("spring-mall商城接口文档Swagger版")
+	     .termsOfServiceUrl("http://www.mall.com/")
+	     .contact(new Contact("spring-mall","", ""))
 	     .version("1.0")
 	     .build();
 	 }
